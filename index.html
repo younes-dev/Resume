@@ -156,26 +156,36 @@
 
         .m-t-100 {
             margin-top: 140px !important;
-        }
+        }   
         
     </style>
 </head>
 
 <body>
-<div class="container left">
-  <input id="chk1" type="checkbox" checked data-toggle="toggle" data-style="ios" data-size="small" data-width="75">
-  <b id="label-dark"><strong>Switch to Dark sight</strong> </b>
-</div>
 
- 
+
+<div class="container m-b--20" floar-left>
+    <p class="float-left d-inline" style="display:inline;">
+        <input id="chk1" type="checkbox" checked data-toggle="toggle" data-style="ios" data-size="small" data-width="75">
+        <b id="label-dark"><strong>Switch to Dark sight</strong> </b>
+    </p>
+
+    <p class="float-right" style="display:inline;float: right;margin-top: 20px;">
+         <a href="img/cv-v1.pdf" class="badge-success" title="Download Resume Pdf Version">
+            <b>  
+                <!-- <img src="img/PDF.png" style="font-size:100px;height: 100px;"> -->
+             <i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:50px;color: #D00F0F"></i>
+            </b>
+        </a>
+     </p>
+ </div> 
 
 <div class="container cv pad-t-40 no-pad-lr m-b-20">
 
-    <!-- Left Column -->
+    <!-- Left Column-->
     <div class="col-md-4 matchHeight m-t-45 no-pad-lr gray">
         <div class="col-md-12 avatar" id="avatar">
             <img src="img/full.png" class="avt">
-<!-- {#            <img src="https://www.w3schools.com/howto/img_avatar.png">#} -->
         </div>
         <div class="col-md-12 bio pad-b-20">
             <div class="center">
@@ -885,8 +895,10 @@
                 if($(this).prop('checked') == false){
                 $("body").addClass("dark-mode"); 
                 $(".col-md-12.avatar").css({background:'linear-gradient(to bottom, #1D2029 0%,#1D2029 50%, #454545 50%, #454545 100%)'});
+                // $("fa-file-pdf-o").css({color:'white'});
                 $("#label-dark").empty();
                 $("#label-dark").append( "<strong>Back to Light Sight</strong>" );
+
                 }else{
                  $("body").removeClass("dark-mode");
                  $(".col-md-12.avatar").css({background:'linear-gradient(to bottom, #fff 0%,#fff 50%, #454545 50%, #454545 100%)'});
