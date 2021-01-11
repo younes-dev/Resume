@@ -1,7 +1,8 @@
 .cv {
     /*border: 1px solid #000;*/
     box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
-}
+/*    border: 6px solid!important;
+*/}
 
 .avatar {
     background: #ffffff;
@@ -32,8 +33,7 @@
     background: #454545;
     color: #fff;
     /*height: 1350px;*/
-    height: 2032px!important;
-    /*height: 1800px!important;*/
+    height: 2262px!important;
 }
 
 .bio hr {
@@ -205,5 +205,5 @@ ul {
         /*border: 1px solid blue;*/
         /*background-color: yellow;*/
     /*}*/
-}
 
+}

@@ -11,6 +11,12 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style/styleResume.css">
+
+
+    <!-- toggel button style start -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+    <!-- toggel button style end -->
     <title>Document</title>
     <style>
         .fa-li{
@@ -111,15 +117,63 @@
             border:solid 6px #4886A5;
         }
 
+        .container{
+
+            /*width: 1600px!important;*/
+            margin-top: 20px;
+        }
+
+        .dark-mode {
+/*          background-color: #25104f!important;
+          background-color: #291356!important;*/
+          background-color: #1D2029!important;
+          color: white!important;
+        }
+
+        .toggle-off{
+            background-color: rebeccapurple!important;
+            color:white!important;
+        }
+
+        .col-md-12.avatar {
+            background: #ffffff;
+            background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+            background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+            background: linear-gradient(to bottom, #fff 0%,#fff 50%, #454545 50%, #454545 100%);
+            height: 300px;
+            text-align: center;
+        }
+
+
+        .container {
+            max-width: 96rem;
+            min-width: 96rem;
+        }
+
+        .m-t-45 {
+            margin-top: 100px !important;
+        }
+
+        .m-t-100 {
+            margin-top: 140px !important;
+        }
+        
     </style>
 </head>
 
 <body>
+<div class="container left">
+  <input id="chk1" type="checkbox" checked data-toggle="toggle" data-style="ios" data-size="small" data-width="75">
+  <b id="label-dark"><strong>Switch to Dark sight</strong> </b>
+</div>
+
+ 
+
 <div class="container cv pad-t-40 no-pad-lr m-b-20">
 
     <!-- Left Column -->
     <div class="col-md-4 matchHeight m-t-45 no-pad-lr gray">
-        <div class="col-md-12 avatar">
+        <div class="col-md-12 avatar" id="avatar">
             <img src="img/full.png" class="avt">
 <!-- {#            <img src="https://www.w3schools.com/howto/img_avatar.png">#} -->
         </div>
@@ -142,8 +196,9 @@
                     <p><span class="glyphicon glyphicon-earphone circle m-r-20" aria-hidden="true"></span>  + (212) 06 05 27 80 11</p>
                     <p><span class="glyphicon glyphicon-map-marker circle m-r-20" aria-hidden="true"></span> Hay Al Qods res Manssouria<br> <span class="m-l-70"> Imm P N°4 Beroussi ,casa</span></p>
                     <p><span class="glyphicon glyphicon-envelope circle m-r-20" aria-hidden="true"></span>  younes.oulkaid@gmail.com</p>
-                    <p><span class="glyphicon glyphicon-link circle m-r-20" aria-hidden="true"></span>  www.younes.com</p>
-                    <p><span class="fab fa-github circle m-r-20" aria-hidden="true"></span> https://github.com/younes-dev</p>
+                    <p><span class="glyphicon glyphicon-link circle m-r-20" aria-hidden="true"></span> <a href="https://younes-dev.github.io/Resume">https://younes-dev.github.io/Resume</a></p>
+                    <p><span class="fab fa-github circle m-r-20" aria-hidden="true"></span> <a href="https://github.com/younes-dev">https://github.com/younes-dev</a></p>
+
 
 
                 </div>
@@ -168,24 +223,24 @@
                     <table class="table">
                         <tbody>
                         <tr>
-                            <td><img src="img/symfony.png" class="img" alt="symfony"><span class="m-l-20">Symfony</span></td>
-                            <td><img src="img/EZ.png"  class="img" alt="symfony"><span class="m-l-20">EasyPublish</span></td>
-                            <td><img src="img/wp.png"  class="img" alt="symfony"><span class="m-l-20">WordPress</span></td>
+                            <td><img src="img/symfony.png" class="img" alt="symfony"><br><span >Symfony</span></td>
+                            <td><img src="img/EZ.png"  class="img" alt="symfony"><br><span >EasyPublish</span></td>
+                            <td><img src="img/wp.png"  class="img" alt="symfony"><br><span >WordPress</span></td>
                         </tr>
                         <tr>
-                            <td><img src="img/php.png" class="img"  alt="php"><span class="m-l-20">Php</span></td>
-                            <td><img src="img/C-Sharp.png" class="img"  alt="php"><span class="m-l-20">C#</span></td>
-                            <td><img src="img/joooomla.png" class="img"  alt="php"><span class="m-l-20">Joomla</span></td>
+                            <td><img src="img/php.png" class="img"  alt="php"><br><span >&nbsp;Php</span></td>
+                            <td><img src="img/C-Sharp.png" class="img"  alt="php"><br><span >&nbsp;&nbsp;C#</span></td>
+                            <td><img src="img/joooomla.png" class="img"  alt="php"><br><span >Joomla</span></td>
                         </tr>
                         <tr>
-                            <td><img src="img/docker-icon.png" class="img"  alt="php"><span class="m-l-20">Docker</span></td>
-                            <td><img src="img/api(1).png" class="img"  alt="php"><span class="m-l-20">ApiPlateform</span></td>
-                            <td><img src="img/mysqlMaria.png" class="img"  alt="php"><span class="m-l-20">Mysql-MariaDB</span></td>
+                            <td><img src="img/docker-icon.png" class="img"  alt="php"><br><span >Docker</span></td>
+                            <td><img src="img/api(1).png" class="img"  alt="php"><br><span >ApiPlateform</span></td>
+                            <td><img src="img/mysqlMaria.png" class="img"  alt="php"><br><span >Mysql-MariaDB</span></td>
                         </tr>
                         <tr>
-                            <td><img src="img/redis2.png" class="img"  alt="php"><span class="m-l-20">Redis</span></td>
-                            <td><img src="img/git.png" class="img"  alt="php"><span class="m-l-20">Git</span></td>
-                            <td><img src="img/soonerqube.png" class="img"  alt="php"><span class="m-l-20">SonarQube</span></td>
+                            <td><img src="img/redis2.png" class="img"  alt="php"><span><br>Redis</span></td>
+                            <td><img src="img/git.png" class="img"  alt="php"><span ><br>&nbsp;&nbsp;Git</span></td>
+                            <td><img src="img/soonerqube.png" class="img"  alt="php"><br><span >SonarQube</span></td>
                         </tr>
                         </tbody>
                     </table>
@@ -269,9 +324,9 @@
                                 <span class="badge badge-success">Symfony 4.4 / 5.2 </span>
                                 <span class="badge badge-success">Mysql / Mariadb / PostgreSQL</span>
                                 <span class="badge badge-success">Doctrine</span>
-                                <span class="badge badge-success">Bootstrap</span>
-                                <br>
-                                <span class="badge badge-success m-l-45">Svn</span>
+                                <span class="badge badge-success m-l-55">Bootstrap</span>
+                                <!-- <br> -->
+                                <span class="badge badge-success">Svn</span>
                                 <span class="badge badge-success">Git</span>
                                 <span class="badge badge-success">Redis</span>
                                 <span class="badge badge-success">RabbitMQ</span>
@@ -292,7 +347,7 @@
                         <p>
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Maintenance des plateformes et applications existantes.</li>
-                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Migration de des application depuis le Svn vers GitHub.</li>
+                            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Migration des applications depuis Svn vers GitHub.</li>
                             <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Analyser et étudier les besoins</li>
                             <li><span class="fa-li"><i class="fas fa-check-square"></i></span>intégration continue des évolutions.</li>
                             <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Amélioration et factorisation de code.</li>
@@ -302,9 +357,10 @@
                             <span class="badge badge-success">Mysql / Mariadb</span>
                             <span class="badge badge-success">Doctrine / Propel</span>
                             <span class="badge badge-success">Symfony 1.4 / 3.4 </span>
-                            <span class="badge badge-success">Svn</span>
+                            <span class="badge badge-success m-l-55">Svn</span>
                             <span class="badge badge-success">Git</span>
-                                <br><span class="badge badge-success m-l-45">Sonarqube</span>
+                            <!--<br>-->                                
+                            <span class="badge badge-success">Sonarqube</span>
                             <span class="badge badge-success">Docker</span>
                             </li>
                         </ul>
@@ -777,13 +833,72 @@
 
     }
 
+    .toggle {
+        margin: 30px;
+    }
+
+    .dark-mode {
+        background-color: #1D2029;
+        color: white;
+    }
+
+    .toggle-off{
+        background-color: rebeccapurple; 
+    }
+   
+/*    .toggle-on{
+        background-image: url("img/moon.svg");
+        background:no-repeat;
+    }
+*/
+
+  .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
+
+
+
+
+/*.avatar-dark {
+    background: #1D2029;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+    background: linear-gradient(to bottom, #1D2029 0%, #1D2029 50%, #454545 50%, #454545 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#454545', GradientType=0);
+
+}*/
+
+
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 <script>
+
+            $('#chk1').change(function() {
+
+                if($(this).prop('checked') == false){
+                $("body").addClass("dark-mode"); 
+                $(".col-md-12.avatar").css({background:'linear-gradient(to bottom, #1D2029 0%,#1D2029 50%, #454545 50%, #454545 100%)'});
+                $("#label-dark").empty();
+                $("#label-dark").append( "<strong>Back to Light Sight</strong>" );
+                }else{
+                 $("body").removeClass("dark-mode");
+                 $(".col-md-12.avatar").css({background:'linear-gradient(to bottom, #fff 0%,#fff 50%, #454545 50%, #454545 100%)'});
+                    $("#label-dark").empty();
+                 $("#label-dark").append( "<strong>Switch to Dark sight</strong>" );
+                 }
+            })
+
+
+
+           
+
 
     $('.skills dd').each(function() {
         $(this).css({
